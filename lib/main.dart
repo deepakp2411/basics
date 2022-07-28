@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MyApp());
+void main(){
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -9,14 +9,26 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return  MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(
-          leading: Icon(Icons.menu),
-          title: Center(child: Text("First Flutter App")),
-        ),
-        body: Center(child: Text("hello")),
+        body: Center(
+          child: Container(
+            height: 400,
+            width: 300,
+            decoration: BoxDecoration(
+              color: Colors.purple,
+              border: Border.all(
+                width: 2,
+                color: Colors.green
+
+              )
+            ),
+            child: Text("DEEPAK"),
+          ),
+        )
       ),
     );
+    
   }
 }
