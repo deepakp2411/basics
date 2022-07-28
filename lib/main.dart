@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
           body: Center(
         child: Container(
+          padding: const EdgeInsets.all(100),
           height: 400,
           width: 300,
           decoration: BoxDecoration(
@@ -21,9 +22,9 @@ class MyApp extends StatelessWidget {
               border: Border.all(width: 2, color: Colors.green,
 
               ),
-              borderRadius: const BorderRadius.all(
-                Radius.circular(150),
-              )
+              // borderRadius: const BorderRadius.all(
+              //   Radius.circular(150),
+              // )
               ),
           child: const Text("DEEPAK"),
         ),
