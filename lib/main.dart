@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main(){
+void main() {
   runApp(const MyApp());
 }
 
@@ -9,26 +9,25 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Center(
-          child: Container(
-            height: 400,
-            width: 300,
-            decoration: BoxDecoration(
+          body: Center(
+        child: Container(
+          height: 400,
+          width: 300,
+          decoration: BoxDecoration(
               color: Colors.purple,
-              border: Border.all(
-                width: 2,
-                color: Colors.green
+              border: Border.all(width: 2, color: Colors.green,
 
+              ),
+              borderRadius: const BorderRadius.all(
+                Radius.circular(150),
               )
-            ),
-            child: Text("DEEPAK"),
-          ),
-        )
-      ),
+              ),
+          child: const Text("DEEPAK"),
+        ),
+      )),
     );
-    
   }
 }
