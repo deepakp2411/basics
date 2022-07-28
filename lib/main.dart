@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
           body: Center(
         child: Container(
+          margin: const EdgeInsets.only(top: 50,right: 5),
           padding: const EdgeInsets.all(100),
           height: 400,
           width: 300,
