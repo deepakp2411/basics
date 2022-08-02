@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,35 +12,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-          body: Center(
-        child: Container(
-          alignment: Alignment.center,
-          // margin: const EdgeInsets.only(top: 50,right: 5),
-          // padding: const EdgeInsets.all(100),
-          height: 400,
-          width: 300,
-          decoration: BoxDecoration(
-              color: Colors.purple,
-              border: Border.all(width: 2, color: Colors.green,
-
-              ),
-              // borderRadius: const BorderRadius.all(
-              //   Radius.circular(150),
-              // )
-              ),
-          child: const Text("DEEPAK",style: TextStyle(
-            color: Colors.white,
-            fontSize: 26,
-            fontFamily: 'Roboto',
-            fontWeight: FontWeight.bold,
-            fontStyle: FontStyle.italic,
-            decoration: TextDecoration.lineThrough,
-            decorationColor: Colors.red,
-            decorationStyle: TextDecorationStyle.dotted,
-            letterSpacing: 25
-          ),),
+        body: Center(
+          child: Container(
+            width: 300,
+            height: 300,
+            color: Colors.blue,
+            child: Image.network(('https://images-eu.ssl-images-amazon.com/images/I/81l3rZK4lnL._AC_UL604_SR604,400_.jpg'),alignment: Alignment.bottomCenter)
+        )
         ),
-      )),
+      ),
     );
+    
   }
 }
